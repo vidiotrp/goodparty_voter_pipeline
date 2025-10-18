@@ -71,7 +71,8 @@ goodparty_voter_pipeline/
 ├─ charts/ # Generated visualization PNG files
 ├─ screenshots/ # Pipeline screenshots
 ├─ dags/ # Airflow DAG definitions
-└─ README.md`
+└─ README.md
+```
 
 
 ## Notes
