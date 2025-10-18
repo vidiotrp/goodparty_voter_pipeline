@@ -1,1 +1,5 @@
- 
+logs/
+airflow.db
+*.log
+*.pid
+*.sqlite 

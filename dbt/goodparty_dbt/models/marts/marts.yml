@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: voter_count_by_state
+    description: "Aggregated voter statistics by state, including gender breakdown, age metrics, and recent voting activity"
+    columns:
+      - name: state
+        description: "State of the voters"
+      - name: total_voters
+        description: "Total number of voters in the state"
+      - name: male_voters
+        description: "Number of male voters"
+      - name: female_voters
+        description: "Number of female voters"
+      - name: avg_age
+        description: "Average age of voters"
+      - name: max_age
+        description: "Maximum age of voters"
+      - name: min_age
+        description: "Minimum age of voters"
+      - name: voters_without_email
+        description: "Number of voters with missing email"
+      - name: voters_not_voted_last_year
+        description: "Number of voters who have not voted in the last year"
+
+  - name: voter_count_by_party
+    description: "Aggregated voter statistics by party, including gender breakdown, age metrics, missing emails, and recent voting activity"
+    columns:
+      - name: party
+        description: "Political party affiliation"
+      - name: total_voters
+        description: "Total number of voters in the party"
+      - name: male_voters
+        description: "Number of male voters"
+      - name: female_voters
+        description: "Number of female voters"
+      - name: avg_age
+        description: "Average age of voters"
+      - name: max_age
+        description: "Maximum age of voters"
+      - name: min_age
+        description: "Minimum age of voters"
+      - name: voters_without_email
+        description: "Number of voters with missing email"
+      - name: voters_not_voted_last_year
+        description: "Number of voters who have not voted in the last year"
+      - name: percent_of_total_voters
+        description: "Percentage of total voters represented by this party"

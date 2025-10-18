@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: int_voters_cleaned
+    description: "Intermediate voter table with standardized formatting and quality flags"
+    columns:
+      - name: voter_id
+        description: "Unique voter identifier"
+        tests:
+          - unique
+          - not_null
+      - name: first_name
+        description: "Voter first name"
+      - name: last_name
+        description: "Voter last name"
+      - name: full_name
+        description: "Full name (first + last) for reporting convenience"
+      - name: age
+        description: "Voter age"
+        tests:
+          - not_null
+      - name: gender
+        description: "Voter gender in uppercase"
+      - name: state
+        description: "Voter state in uppercase"
+      - name: party
+        description: "Voter party affiliation in uppercase"
+      - name: email
+        description: "Voter email in lowercase"
+        tests:
+          - not_null
+      - name: registered_date
+        description: "Date voter registered"
+      - name: last_voted_date
+        description: "Date voter last voted"
+      - name: updated_at
+        description: "Date the record was last updated"

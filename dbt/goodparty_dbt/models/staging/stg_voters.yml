@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: voter_staging
+    description: "Raw voter data ingested from CSV into Postgres"
+    database: "{{ target.database }}"
+    schema: public
+    tables:
+      - name: voter_staging
+        description: "Staging table for voter records"
+        columns:
+          - name: voter_id
+            description: "Unique voter identifier"
+            tests:
+              - unique
+              - not_null
+          - name: first_name
+            description: "Voter first name"
+          - name: last_name
+            description: "Voter last name"
+          - name: email
+            description: "Voter email address"
+          - name: registered_date
+            description: "Date voter registered"
