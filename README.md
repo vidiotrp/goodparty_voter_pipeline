@@ -14,52 +14,19 @@ Follow these steps to set up and run the pipeline locally:
 ### 2. Install Python dependencies
 Create and activate a virtual environment, then install packages.  
 
-- Mac/Linux:
-
-    python -m venv venv
-    source venv/bin/activate
     pip install -r requirements.txt
-
-- Windows:
-
-    python -m venv venv
-    venv\Scripts\activate.bat
-    pip install -r requirements.txt
-
-> Make sure `requirements.txt` includes `pandas`, `matplotlib`, `sqlalchemy`, `psycopg2-binary`, etc.
 
 ### 3. Set up environment variables
 Set your Postgres connection info. You can use a `.env` file or export variables manually:  
-
-- Mac/Linux:
-
-    export POSTGRES_USER=<username>
-    export POSTGRES_PASSWORD=<password>
-    export POSTGRES_DB=<database>
-
-- Windows PowerShell:
 
     $env:POSTGRES_USER="<username>"
     $env:POSTGRES_PASSWORD="<password>"
     $env:POSTGRES_DB="<database>"
 
-### 4. Initialize dbt
-From the `dbt/goodparty_dbt` directory, run:
-
-    dbt deps        # if using any packages
-    dbt seed        # optional if seeds are present
-    dbt run
-    dbt test
-    dbt docs generate
-
-### 5. Start Airflow
+### 4. Start Airflow
 Make sure Airflow is installed and initialized:
 
-    airflow db init
-    airflow webserver -p 8080
-    airflow scheduler
-
-> Trigger the `voter_data_ingestion` DAG manually or via schedule.
+### 5. Initialize dbt
 
 ---
 
