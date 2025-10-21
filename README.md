@@ -47,7 +47,6 @@ The pipeline consists of:
      - Emails lowercased
      - Missing data flags (`missing_email`, `missing_age`, etc.)
      - States standardized to 2-letter abbreviations
-     - Only valid ages are kept (0–120)
 
 4. **Marts**  
    - Aggregate metrics for reporting:
