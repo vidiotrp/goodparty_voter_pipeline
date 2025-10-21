@@ -24,7 +24,7 @@ Set your Postgres connection info. You can use a `.env` file or export variables
     $env:POSTGRES_DB="<database>"
 
 ### 4. Start Airflow
-Make sure Airflow is installed and initialized:
+Make sure Airflow is installed and initialized.
 
 ### 5. Initialize dbt
 
