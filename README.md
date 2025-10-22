@@ -73,7 +73,7 @@ The pipeline consists of:
 |---------------------|-------------------------------|
 | [![Voter Count by State](charts/voter_count_by_state.png)](charts/voter_count_by_state.png) | [![Voter Gender by State](charts/voter_gender_by_state.png)](charts/voter_gender_by_state.png) |
 
-### Party Metrics
+### Party Counts
 
 | Total Voters by Party |
 |----------------------|
